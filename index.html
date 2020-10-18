@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>프로젝트 통감: 살 만한 가(家)요?</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet"  href="lightslider.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+            width: 100%;
+            /* min-width: 300px; */
+		}
+    </style>
+    <script src="lightslider.js"></script> 
+    <script>
+		function change_text(){
+			document.getElementById("text-target").innerHTML = "햇살이 잘 드는";
+		}
+
+
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true,
+                thumbItem:3
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:7,
+                slideMargin: 0,
+                speed:500,
+                auto:false,
+                loop:false,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+			});
+			
+		});
+
+		
+    </script>
+</head>
+<body style="background-color:white;">
+
+	<section class="normal-content bg-buildings ">
+		<div class="global-width">
+			<div class="bg-buildings" id="header-area">
+				<div class="global-width center-align vertical-center height-full">
+					<div>
+						<h1><span style="color: white; background-color: steelblue;">집다운 집, 최저주거기준:</span></h1>
+						<br>
+						<h1><span style="color: steelblue; background-color: white;">당신의 집은 살 만한 가(家)요?</span></h1>
+						<span  style="color: white; background-color: rgba(0, 0, 0, 0.6);"><i>원활한 게임 진행을 위해 소리를 켜주세요!</i></span>
+						<br><br>
+						<button class="btn1" id="btnToTarget0"><b>스크롤 내려서 시작</b></button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<section class="scroll-content bg-white">
+		<div class="scroll-graphic">
+			<div class="graphic-item"><img class="scene-img char" src="images/rabi-hi.png" alt=""></div>
+			<div class="graphic-item"><img class="scene-img char" src="images/rabi-basic.png" alt=""></div>
+			<div class="graphic-item"><img class="scene-img char" src="images/rabi-teacher.png" alt=""></div>
+			<div class="graphic-item"><img class="scene-img char" src="images/rabi-teacher.png" alt=""></div>
+			<div class="graphic-item"><img class="scene-img char" src="images/rabi-basic.png" alt=""></div>
+		</div>
+
+		<div class="scroll-text global-width">
+			
+				<div class="step" id="target0">
+
+				</div>
+				<div class="step step-box">
+					안녕하세요. 살만한가 마을에 처음 오신 걸 환영합니다.
+				</div>
+				<div class="step step-box">
+					소통시 공감구 살만한가에 위치한 살만한가 마을에는 총 106만 가구가 거주하고 있습니다.
+				</div>
+				<div class="step step-box">
+					살만한가 마을의 마스코트인 저는 새로운 방문자들과 함께 마을 사람들의 집을 점검하고 문제해결을 도와주고 있죠.
+				</div>
+				<div class="step step-box">
+					오늘 순서는 54번지 302호에 거주하고 있는 청년 A씨의 집이군요!<br>
+					<button class="btn1" onClick="document.getElementById('target1').scrollIntoView();">살만한가 54번지 방문하기</button>
+				</div>
+		
+		</div>
+	</section>
+
+	<section class="normal-content bg-white">
+		<div class="scroll-text global-width">
+			<div class="check-game" id="target1">
+				<p><b>도구들을 이용해서 방 안을 살펴보세요</b></p>
+				<div id="check-list"style="text-align:left;">
+					<span id="check-text-noise">적절한 방음 설비를 갖추었는가?</span><br>
+					<span id="check-text-air">적절한 환기 설비를 갖추었는가?</span><br>
+					<span id="check-text-glass">주요 구조부가 방습에 양호한 재질인가?</span><br>
+					<span id="check-text-temperature">상수도 시설이 완비되어 있는가?</span>
+				</div>
+				<div id="parent">
+					<div id="child-1" style="display: none">
+						<div class="progress"><div class="back"></div></div>
+					</div>
+					<div id="child-2" style="display: none">
+						<div class="progress"><div class="back"></div></div>
+					</div>
+					<div id="child-3" style="display: none">
+						<div class="progress"><div class="back"></div></div>
+					</div>
+					<div id="child-4" style="display: none">
+						<div class="progress"><div class="back"></div></div>
+					</div>
+					<div id="child-5">
+					</div>
+					<div id="child-6">
+					</div>
+					<div id="child-7">
+					</div>
+					<div id="child-8">
+					</div>
+					<div id="child-9">
+					</div>
+					<div id="child-10">
+					</div>
+					<div id="child-11">
+					</div>
+					<div id="child-12">
+					</div>
+					<div id="child-13">
+					</div>
+					<div id="child-14">
+					</div>
+					<div id="child-15">
+					</div>
+					<div id="child-16">
+					</div>
+				</div>
+				<div id="check-tools">
+					<img src="images/tool-air.png" id="toolAir" alt="" width="50" height="80">
+					<img src="images/tool-noise.png" id="toolNoise" alt="" width="50" height="80">
+					<img src="images/tool-glass.png" id="toolGlass" alt="" width="50" height="80">
+					<img src="images/tool-temperature.png" id="toolTemperature" alt="" width="50" height="80">
+				</div>
+				
+				<div id="pop-text">확인을 해보자!</div>
+				<div id="check-next-btn">
+					<button class="btnInactive" id="btnToTarget2">넘어가기</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="scroll-content-new bg-buildings" >
+		<div class="scroll-graphic-new">
+			<div class="graphic-item-new"><img class="scene-img char" src="images/rabi-teacher.png" alt=""></div>
+			<div class="graphic-item-new"><img class="scene-img char" src="images/rabi-hi.png" alt=""></div>
+			<div class="graphic-item-new"><img class="scene-img char" src="images/rabi-basic.png" alt=""></div>
+			<div class="graphic-item-new"><img class="scene-img char" src="images/rabi-teacher.png" alt=""></div>
+		</div>
+		<div class="scroll-text global-width">
+			<div class="step-new step-box" id="target2">
+				<p>도구들을 활용하여 A씨의 집을 자세히 확인하셨나요?<br>그렇다면, A씨의 집은 최저주거기준에 부합할까요?</p>
+				<button class="btn1" id="btnToTarget3">예</button>
+				<button class="btn2" id="btnToTarget3-1">아니오</button>
+			</div>
+			<div class="step-new step-box" id="target3">
+				정답은 ... YES입니다! 사실 앞에서 보신 A씨의 집은 서울 기준 20대 청년들이 거주하는 전 형적인 원룸을 그림 형태로 재구성한 것입니다. 
+				‘자취방’이 ‘좋은 집’이라고 생각하는 사람은 많지 않지만, 현행 대한민국의 최저주거기준에 미달한다고 판단하기는 어렵습니다.<br>
+			</div>
+			<div class="step-new step-box" id="target4">
+				<b>- 대한민국 최저주거기준의 내용은?</b><br>
+				<p style="text-align:left;">
+				[건물 구조] 구조 강도가 확보 되고,<br>
+				&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;내열, 내화, 방열, 방습에 양호한 재질임<br>
+				[기본 상태] 방음. 환기. 채광. 난방설비를 갖춤<br>
+				[환경 요소] 소음. 진동. 악취. 대기오염이 법정기준에 적합함<br>
+				[자연 재해] 해일. 홍수. 산사태 등으로부터 안전함<br>
+				[피난 구조] 전기시설. 화재 대피구조가 안전함<br><br>
+				</p>
+			</div>
+			<div class="step-new step-box">
+				<p>
+					위와 같이 글로만 보았을 때는 인간의 기본적인 주거환경이 보장되는 것 같지만, 
+				현재 대한 민국에는 앞의 그림으로 보셨던 것처럼 원활히 거주하기 힘든 형태의 집들이 매우 많습니다. 
+				그럼에도 불구하고 이러한 주거형태가 많은 이유는 바로 “현행 최저주거기준”이 미흡하기 때문입니다.
+				</p>
+			</div>
+		
+		</div>
+	</section>
+
+	<section class="normal-content bg-white">
+	
+		<div class="global-width need-padding">
+			<div class="" id="target4">
+				<h1>1. 현행 최저주거기준의 부실한 면모 하나, 얕다.</h1>
+				<p>
+					현재 최저주거기준은 방음, 환기, 채광, 난방 등 주거 환경의 질을 결정하는 요소에 대한 구체적이고 정량적인 기준이 부재합니다.
+					국가법령정보센터의 현행 한국 최저주거기준 제4조 2번에 의하면,
+					“적절한 방음. 환기. 채광 및 난방설비를 갖추어야 한다.”
+					라는 주관적인 기준만 기재되어있을 뿐, 구체적이고 정량적인 수치는 명시되어있지 않습니다. <br>
+					반면, 주거 면적과 관련된 기준은 수치적으로 명확히 정해져 있으나,
+					한 사람이 거주하는데 필요한 적당한 크기에 대해서는 개개인별로 의견이 분분하며,
+					다른 국가에 비하여 현저히 적 은 면적을 기준으로 하고 있습니다.
+				</p>
+			</div>
+			<div id="">
+				<img src="images/img-1.png" width="100%">
+				<img src="images/img-2.png" width="100%">
+				<img src="images/img-3.png" width="80%">
+			</div>
+			<div class="">
+				<h1>2. 현행 최저주거기준의 부실한 면모 둘, 좁다.</h1>
+				<p>
+					최저주거기준은 고시원과 민간 쉐어하우스를 포함하지 못하는, 매우 ‘좁은’ 주거기준입니다. 
+					최저주거기준은 기본적으로 ‘주택’을 기준으로 하지만, 고시원은 비주택으로 간주되기 때문이죠.<br>
+					고시원과 같은 ‘주거 빈곤지’에 사는 서울 1인 청년 가구의 비율은 점차 늘어나고 있지만, 이들에겐 최저주거기준조차도 그림의 떡입니다. 
+					또한 쉐어하우스의 경우, 전체 주택면적만을 따질 뿐 실질적인 1인실의 면적은 고려대상에 포함되지 않습니다.
+					예를 들어, 쉐어하우스 1인실의 면적이나 환경이 빈약하다 하더라도 현행 법상 최저주거기준을 갖고 문제제기 할 수 없다는 것입니다.
+					최근 국토부에서는 쉐어하우스용 가이드라인을 제시한 바 있으나, 그조차도 민간에서 운영하는 쉐어하우스는 관리대상에서 제 외되고 있습니다.
+				</p>
+			</div>
+			<div class="">
+				<p>
+					이처럼 우리나라의 현행 최저주거기준은 여전히 많이 미흡하고 모호합니다. 
+					진정한 최저주거기준이라면 <br>
+					1) 애매한 질적 요소에 대한 구체적 기준을 명시해야 하고,<br>
+					2) 청년들이 거주하는 다양한 주거 형태에 유효한 기준을 포함해야 합니다.<br>
+					또한  최저주거기준이 유명무실해지지 않도록 제도적 장치를 만들고 관심을 기울여야 하겠죠.
+					다행히 지금 위의 조건을 갖춘 최저주거기준 개정 논의가 진행되고 있습니다.
+					그렇기에 보다 나은 최저주거기준을 만들고 모두가 그 효과를 누리기 위해 우리가 목소리를 내야 합니다.
+					청년들, 그리고 모두에게 ‘살만한’ 주거환경을 마련하기 위해서 말이죠.
+					그렇다면 우리는 살 만한 집을 위해 어떤 일을 할 수 있을까요
+				</p>
+				<button class="btn1" onClick="document.getElementById('target5').scrollIntoView();">참여하기</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="normal-content bg-white global-width" id="target5">
+		<div class="global-width need-padding">
+			<h2 class="new-para-padding">1. 최저주거기준에 대해 더 이야기 하기</h2>
+			<p>
+				통감 빠띠 그룹스에서 최저주거기준에 대한 생각을 나눠주세요!<br>
+				- <a href="https://tonggam.parti.xyz">tonggam.parti.xyz</a>
+			</p>
+			<h2 class="new-para-padding">2. 살만한家 챌린지 참여하기</h2>
+			<p>아래의 그림 중 한 개를 고른 후 <b>#나는_살만한_집을_꿈꿉니다</b> 라는 해시태그와 함께 SNS(인스타그램, 페이스북)에 공유해주세요.</p>
+		</div>
+		
+			
+		<div class="row" id="challenge-center">
+			<div class="demo container">
+				<div class="item">            
+					<div class="clearfix" style="width:80vw; margin: auto">
+						<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+							<li data-thumb="images/challenge-air.png"> 
+								<img src="images/challenge-air.png" class="challenge-img"/>
+								<div style="font-size: 30px;text-align: center; position: relative; bottom: 35px;">
+									<h4 style="color: white">"상쾌한 공기로 숨쉴 수 있는"</h3>
+								</div>
+							</li>
+							<li data-thumb="images/challenge-bath.png"> 
+								<img src="images/challenge-bath.png" class="challenge-img"/>
+								<div style=" height: 30px; font-size: 20px;text-align: center; position: relative; bottom: 35px;">
+									<h4 style="color: white">"언제든 따뜻한 물로 씻을 수 있는"</h4>
+								</div>
+							</li>
+							<li data-thumb="images/challenge-humid.png"> 
+								<img src="images/challenge-humid.png" class="challenge-img"/>
+								<div style=" height: 30px; font-size: 30px;text-align: center; position: relative; bottom: 35px;">
+									<h4 style="color: white">"습하지 않고 쾌적한"</h4>
+								</div>
+							</li>
+							<li data-thumb="images/challenge-noise.png"> 
+								<img src="images/challenge-noise.png" class="challenge-img"/>
+								<div style=" height: 30px; font-size: 30px;text-align: center; position: relative; bottom: 35px;">
+									<h4 style="color: white">"소음 없는 고요한</h4>
+								</div>
+							</li>
+							<li data-thumb="images/challenge-sun.png"> 
+								<img src="images/challenge-sun.png" class="challenge-img"/>
+								<div style=" height: 30px; font-size: 30px;text-align: center; position: relative;  bottom: 35px;">
+									<h4 style="color: white">"아침 햇살이 잘 드는"</h4>
+								</div>
+							</li>
+							<li data-thumb="images/challenge-temperature.png"> 
+								<img src="images/challenge-temperature.png" class="challenge-img"/>
+								<div style=" height: 30px; font-size: 30px;text-align: center; position: relative; bottom: 35px;">
+									<h4 style="color: white">"담요가 없어도 땨뜻한"</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- <button onclick="change_text()">Click me</button> -->
+		<div id="challenge-text">
+			"나는 <span id="text-target" style="color: white; background-color: steelblue;">[이미지를 넘겨 주세요]</span> 집에서 살고 싶습니다."
+		</div>
+	
+	
+		<!-- Instagram -->
+		<div class="center-align">
+			<iframe src="https://www.instagram.com/p/CDlbbWAj0WQ/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		</div>
+
+		<!-- Sharingbutton Facebook -->
+		<div class="center-align">
+			<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=naver.com" target="_blank" rel="noopener" aria-label="Share on Facebook">
+				<div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+				</div>페이스북에 공유하기</div>
+			</a>
+		</div>
+	</section>
+
+
+	<footer class="global-footer">
+		<p>Contact Info</p>
+		<a href="https://www.instagram.com/tong_gam" target="_blank"><img src="images/icon-insta.png" width="10%"></a>
+		<a href="https://www.facebook.com/feelstrongly" target="_blank"><img src="images/icon-facebook.png" width="10%"></a>
+		<a href="https://blog.naver.com/tong_gam" target="_blank"><img src="images/icon-facebook.png" width="10%"></a>
+		<a href="https://pf.kakao.com/_xkHinu/chat" target="_blank"><img src="images/icon-facebook.png" width="10%">@통감</a>
+		
+
+	</footer>
+
+	<script src="main.js"></script>
+</body>
+</html>
