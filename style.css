@@ -91,7 +91,7 @@ img {
 	margin-bottom: 60vh;
 	padding:0.5rem 1rem;
 	border-radius: 10px;
-	background:rgba(255,255,255,0.8);
+	background:rgba(255,255,255,0.9);
 	box-shadow: rgba(0,0,0,0.3) 0 0 3px;
 
 	/* 내가 추가 */
@@ -307,7 +307,7 @@ code {
   #pop-text {
 	position: fixed;
 	display: none;
-	top:40%;
+	top:50%;
 	left:0%;
 	width: 100vw;
 	margin: auto auto;
@@ -442,6 +442,7 @@ code {
 .bg-buildings { 
 	/* The image used */
 	background-image: url("images/bg.png");
+	background-position: bottom;
   
 	/* Full height */
 	width: 100%;
@@ -505,4 +506,13 @@ code {
 
   .need-padding {
 	  max-width: 90vw;
+  }
+
+  .text-justify {
+	  text-align: justify;
+  }
+
+  .text-source {
+	  text-align: right;
+	  font-size: x-small;
   }

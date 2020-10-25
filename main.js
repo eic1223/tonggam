@@ -209,7 +209,7 @@
             checkNextBtn();
             document.getElementById("child-1").style.display='none';
             document.getElementById('pop-text').style.display='block';
-            document.getElementById('pop-text').innerText = '환기가 잘 되지 않는지 공기가 탁하다. 창문을 오래 열어놓았는데 아까 먹은 음식 냄새가 남아 있어…';
+            document.getElementById('pop-text').innerText = '환기가 잘 안 되는지 공기가 탁하다. 창문을 오래 열어 놓았는데도 아까 먹은 음식 냄새가 남아 있어…';
             setTimeout(() => {
                 document.getElementById('pop-text').style.display='none';
             }, 5000);
@@ -259,18 +259,18 @@
             document.getElementById('pop-text').style.display='none';
         }
 
-        document.getElementById('btnToTarget0').onclick = function fun() {
-            scrollToTargetAdjusted('target0')
-        }
+        // document.getElementById('btnToTarget0').onclick = function fun() {
+        //     scrollToTargetAdjusted('target0')
+        // }
         document.getElementById('btnToTarget2').onclick = function fun() {
             scrollToTargetAdjusted('target2')
         }
-        document.getElementById('btnToTarget3').onclick = function fun() {
-            scrollToTargetAdjusted('target3')
-        }
-        document.getElementById('btnToTarget3-1').onclick = function fun() {
-            scrollToTargetAdjusted('target3')
-        }
+        // document.getElementById('btnToTarget3').onclick = function fun() {
+        //     scrollToTargetAdjusted('target3')
+        // }
+        // document.getElementById('btnToTarget3-1').onclick = function fun() {
+        //     scrollToTargetAdjusted('target3')
+        // }
 
         document.getElementById("btnToTarget2").disabled = true;
     }

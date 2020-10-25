@@ -77,12 +77,11 @@
 				<div class="global-width center-align vertical-center height-full">
 					<div>
 						<h1><span style="color: white; background-color: steelblue;">집다운 집, 최저주거기준:</span></h1>
-						<br>
 						<h1><span style="color: steelblue; background-color: white;">당신의 집은 살 만한 가(家)요?</span></h1>
 						<span  style="color: white; background-color: rgba(0, 0, 0, 0.6);"><i>원활한 게임 진행을 위해 소리를 켜주세요!</i></span>
 						<br><br>
 						<!-- <button class="btn1" id="btnToTarget0"><b>스크롤 내려서 시작</b></button> -->
-						<img src="images/btn-start.png" id="btnToTarget0" alt="" width="191" height="62">
+						<!-- <img src="images/btn-start.png" id="btnToTarget0" alt="" width="191" height="62"> -->
 					</div>
 				</div>
 			</div>
@@ -116,7 +115,7 @@
 				</div>
 				<div class="step step-box">
 					오늘 순서는 54번지 302호에 거주하고 있는 청년 A씨의 집이군요!<br>
-					<img src="images/btn-invite.png" id="btnToTarget0" alt="" width="191" height="62" onClick="document.getElementById('target1').scrollIntoView();">
+					<!-- <img src="images/btn-invite.png" id="btnToTarget0" alt="" width="191" height="62" onClick="document.getElementById('target1').scrollIntoView();"> -->
 					<!-- <button class="btn1" onClick="document.getElementById('target1').scrollIntoView();">살만한가 54번지 방문하기</button> -->
 				</div>
 		
@@ -128,8 +127,8 @@
 			<div class="check-game" id="target1">
 				<p><b>도구들을 이용해서 방 안을 살펴보세요</b></p>
 				<div id="check-list"style="text-align:left;">
-					<span id="check-text-noise">적절한 방음 설비를 갖추었는가?</span><br>
 					<span id="check-text-air">적절한 환기 설비를 갖추었는가?</span><br>
+					<span id="check-text-noise">적절한 방음 설비를 갖추었는가?</span><br>
 					<span id="check-text-glass">주요 구조부가 방습에 양호한 재질인가?</span><br>
 					<span id="check-text-temperature">상수도 시설이 완비되어 있는가?</span>
 				</div>
@@ -189,25 +188,26 @@
 	<section class="scroll-content-new bg-buildings" >
 		<div class="scroll-graphic-new">
 			<div class="graphic-item-new"><img class="scene-img char" src="images/rabi-teacher.png" alt=""></div>
-			<div class="graphic-item-new"><img class="scene-img char" src="images/rabi-hi.png" alt=""></div>
-			<div class="graphic-item-new"><img class="scene-img char" src="images/rabi-basic.png" alt=""></div>
 			<div class="graphic-item-new"><img class="scene-img char" src="images/rabi-teacher.png" alt=""></div>
+			<div class="graphic-item-new"><img class="scene-img char" src="images/transparent.png" alt=""></div>
+			<div class="graphic-item-new"><img class="scene-img char" src="images/transparent.png" alt=""></div>
 		</div>
 		<div class="scroll-text global-width">
 			<div class="step-new step-box" id="target2">
 				<p>도구들을 활용하여 A씨의 집을 자세히 확인하셨나요?<br>그렇다면, A씨의 집은 최저주거기준에 부합할까요?</p>
-				<button class="btn1" id="btnToTarget3">예</button>
-				<button class="btn2" id="btnToTarget3-1">아니오</button>
+				<!-- <button class="btn1" id="btnToTarget3">Yes</button>
+				<button class="btn2" id="btnToTarget3-1">No</button> -->
 			</div>
-			<div class="step-new step-box" id="target3">
-				정답은 ... YES입니다! 사실 앞에서 보신 A씨의 집은 서울 기준 20대 청년들이 거주하는 전 형적인 원룸을 그림 형태로 재구성한 것입니다. 
-				‘자취방’이 ‘좋은 집’이라고 생각하는 사람은 많지 않지만, 현행 대한민국의 최저주거기준에 미달한다고 판단하기는 어렵습니다.<br>
+			<div class="step-new step-box text-justify" id="target3">
+				정답은 … Yes입니다! 앞에서 보신 A씨의 집은 서울 기준 20대 청년들이 거주하는 평범한 원룸을 그림 형태로 재구성한 것입니다.
+				 그리고 도구를 이용해 확인한 항목들은 대한민국의 현행 <u>최저주거기준</u>의 일부입니다.
+				  사실 이 자취방은 현행법상 최저주거기준을 명백히 위반한다고 볼 수 없지만,
+				   모두가 살만한 집이라고 판단하기는 어렵죠.<br>
 			</div>
 			<div class="step-new step-box" id="target4">
-				<b>- 대한민국 최저주거기준의 내용은?</b><br>
+				<b>대한민국 최저주거기준의 내용은?</b><br>
 				<p style="text-align:left;">
-				[건물 구조] 구조 강도가 확보 되고,<br>
-				&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;내열, 내화, 방열, 방습에 양호한 재질임<br>
+				[건물 구조] 구조 강도가 확보되고, 내열, 내화, 방열, 방습에 양호한 재질임<br>
 				[기본 상태] 방음. 환기. 채광. 난방설비를 갖춤<br>
 				[환경 요소] 소음. 진동. 악취. 대기오염이 법정기준에 적합함<br>
 				[자연 재해] 해일. 홍수. 산사태 등으로부터 안전함<br>
@@ -215,10 +215,10 @@
 				</p>
 			</div>
 			<div class="step-new step-box">
-				<p>
+				<p class="text-justify">
 					위와 같이 글로만 보았을 때는 인간의 기본적인 주거환경이 보장되는 것 같지만, 
-				현재 대한 민국에는 앞의 그림으로 보셨던 것처럼 원활히 거주하기 힘든 형태의 집들이 매우 많습니다. 
-				그럼에도 불구하고 이러한 주거형태가 많은 이유는 바로 “현행 최저주거기준”이 미흡하기 때문입니다.
+					현재 대한민국에는 앞의 그림처럼 원활히 거주하기 힘든 형태의 집들이 매우 많습니다. 
+					그럼에도 불구하고 이러한 주거형태가 많은 이유는 바로 '현행 최저주거기준'이 미흡하기 때문입니다.
 				</p>
 			</div>
 		
@@ -230,14 +230,14 @@
 		<div class="global-width need-padding">
 			<div class="" id="target4">
 				<h1>1. 현행 최저주거기준의 부실한 면모 하나, 얕다.</h1>
-				<p>
-					현재 최저주거기준은 방음, 환기, 채광, 난방 등 주거 환경의 질을 결정하는 요소에 대한 구체적이고 정량적인 기준이 부재합니다.
+				<p class="text-justify">
+					현재 최저주거기준에는 방음, 환기, 채광, 난방 등 주거 환경의 질을 결정하는 요소에 대한 구체적이고 정량적인 기준이 부재합니다.
 					국가법령정보센터의 현행 한국 최저주거기준 제4조 2번에 의하면,
 					“적절한 방음. 환기. 채광 및 난방설비를 갖추어야 한다.”
 					라는 주관적인 기준만 기재되어있을 뿐, 구체적이고 정량적인 수치는 명시되어있지 않습니다. <br>
 					반면, 주거 면적과 관련된 기준은 수치적으로 명확히 정해져 있으나,
-					한 사람이 거주하는데 필요한 적당한 크기에 대해서는 개개인별로 의견이 분분하며,
-					다른 국가에 비하여 현저히 적 은 면적을 기준으로 하고 있습니다.
+					한 사람이 거주하는 데 필요한 적당한 크기에 대해서는 의견이 분분하며,
+					다른 국가에 비하여 현저히 적은 면적을 기준으로 하고 있습니다.
 				</p>
 			</div>
 			<div class="center-align">
@@ -247,29 +247,37 @@
 			</div>
 			<div class="">
 				<h1>2. 현행 최저주거기준의 부실한 면모 둘, 좁다.</h1>
-				<p>
-					최저주거기준은 고시원과 민간 쉐어하우스를 포함하지 못하는, 매우 ‘좁은’ 주거기준입니다. 
-					최저주거기준은 기본적으로 ‘주택’을 기준으로 하지만, 고시원은 비주택으로 간주되기 때문이죠.<br>
-					고시원과 같은 ‘주거 빈곤지’에 사는 서울 1인 청년 가구의 비율은 점차 늘어나고 있지만, 이들에겐 최저주거기준조차도 그림의 떡입니다. 
-					또한 쉐어하우스의 경우, 전체 주택면적만을 따질 뿐 실질적인 1인실의 면적은 고려대상에 포함되지 않습니다.
-					예를 들어, 쉐어하우스 1인실의 면적이나 환경이 빈약하다 하더라도 현행 법상 최저주거기준을 갖고 문제제기 할 수 없다는 것입니다.
-					최근 국토부에서는 쉐어하우스용 가이드라인을 제시한 바 있으나, 그조차도 민간에서 운영하는 쉐어하우스는 관리대상에서 제 외되고 있습니다.
+				<p class="text-justify">
+					최저주거기준은 고시원과 민간 셰어하우스를 포함하지 못하는, 매우 ‘좁은’ 주거기준입니다. 
+					최저주거기준은 기본적으로 ‘주택’을 기준으로 하지만, <u>고시원은 비주택으로 간주되기 때문</u>이죠.
+					고시원과 같은 <u>‘주거 빈곤지’에 사는 서울 1인 청년 가구의 비율은 점점 늘어나고 있지만</u>, 이들에겐 최저주거기준조차도 그림의 떡입니다. 
 				</p>
+				<img class="center-align" src="images/img-4.png" width="100%">
+				<span class="text-source">출처: 머니투데이, “고시원에 갇힌 청년들, 그들이 못떠나는 이유는…”<br><br></span>
+
+				<p class="text-justify">
+					또한 <u>셰어하우스</u>의 경우, 전체 주택면적만을 따질 뿐 실질적인 1인실의 면적은 고려대상에 포함되지 않습니다.
+					예를 들어, 셰어하우스 1인실의 면적이나 환경이 빈약하다 하더라도 현행법상 최저주거기준을 갖고 문제제기 할 수 없다는 것입니다.
+					최근 국토부에서는 셰어하우스용 가이드라인을 제시한 바 있으나, 그조차도 민간에서 운영하는 셰어하우스는 관리대상에서 제외되고 있습니다.
+				</p>
+				<img class="center-align" src="images/img-5.png" width="100%">
+				<span class="text-source">출처: 서울특별시 ‘사회주택플랫폼’<br><br></span>
 			</div>
+			
 			<div class="">
-				<p>
+				<p class="text-justify">
 					이처럼 우리나라의 현행 최저주거기준은 여전히 많이 미흡하고 모호합니다. 
 					진정한 최저주거기준이라면 <br>
-					1) 애매한 질적 요소에 대한 구체적 기준을 명시해야 하고,<br>
-					2) 청년들이 거주하는 다양한 주거 형태에 유효한 기준을 포함해야 합니다.<br>
-					또한  최저주거기준이 유명무실해지지 않도록 제도적 장치를 만들고 관심을 기울여야 하겠죠.
+					1) 애매한 질적 요소에 대한 <b><u>구체적 기준</u></b>을 명시해야 하고,<br>
+					2) 청년들이 거주하는 다양한 <b><u>주거 형태에 유효한 기준</u></b>을 포함해야 합니다.<br>
+					또한 <b><u>최저주거기준이 유명무실해지지 않도록 제도적 장치를 만들고 관심을 기울여야</u></b> 하겠죠.
 					다행히 지금 위의 조건을 갖춘 최저주거기준 개정 논의가 진행되고 있습니다.
 					그렇기에 보다 나은 최저주거기준을 만들고 모두가 그 효과를 누리기 위해 우리가 목소리를 내야 합니다.
-					청년들, 그리고 모두에게 ‘살만한’ 주거환경을 마련하기 위해서 말이죠.
-					그렇다면 우리는 살 만한 집을 위해 어떤 일을 할 수 있을까요
+					청년들, 그리고 모두에게 ‘살 만한’ 주거환경을 마련하기 위해서 말이죠.
+					그렇다면 우리는 살 만한 집을 위해 어떤 일을 할 수 있을까요?
 				</p>
 				<div class="center-align">
-					<img src="images/btn-participate.png" id="" alt="" width="191" height="62" onClick="document.getElementById('target5').scrollIntoView();">
+					<!-- <img src="images/btn-participate.png" id="" alt="" width="191" height="62" onClick="document.getElementById('target5').scrollIntoView();"> -->
 				<!-- <button class="btn1" onClick="document.getElementById('target5').scrollIntoView();">참여하기</button> -->
 				</div>	
 			</div>
@@ -358,10 +366,10 @@
 
 	<footer class="global-footer">
 		<p>Contact Info</p>
-		<a href="https://www.instagram.com/tong_gam" target="_blank"><img src="images/icon-insta.png" width="10%"></a>
-		<a href="https://www.facebook.com/feelstrongly" target="_blank"><img src="images/icon-facebook.png" width="10%"></a>
-		<a href="https://blog.naver.com/tong_gam" target="_blank"><img src="images/icon-facebook.png" width="10%"></a>
-		<a href="https://pf.kakao.com/_xkHinu/chat" target="_blank"><img src="images/icon-facebook.png" width="10%">@통감</a>
+		<a href="https://www.instagram.com/tong_gam" target="_blank"><img src="images/icon-instagram.png" width="10%"></a>
+		<a href="https://www.facebook.com/feelstrongly" target="_blank"><img src="images/icon-fb.png" width="10%"></a>
+		<a href="https://blog.naver.com/tong_gam" target="_blank"><img src="images/icon-naver.png" width="10%"></a>
+		<a href="https://pf.kakao.com/_xkHinu/chat" target="_blank"><img src="images/icon-kakaoch.png" width="10%">@통감</a>
 		
 
 	</footer>
