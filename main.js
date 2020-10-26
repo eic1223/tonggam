@@ -5,33 +5,6 @@
     var checkItem4 = false;
 
 
-    // console.log("?");
-    const actions = {
-        birdFlies(key) {
-            if(key){
-                console.log(key);
-                document.querySelector('[data-index="2"] .bird').style.transform = `translateX(${window.innerWidth*0.25}px)`;
-                // document.querySelector('[data-index="2"] .bird').style.transform = `translateX(${window.innerWidth}px)`;
-            } else{
-                console.log(key);
-                document.querySelector('[data-index="2"] .bird').style.transform = `translateX(-100%)`;
-            }
-            
-        },
-        birdFlies2(key) {
-            if(key){
-                console.log(key);
-                document.querySelector('[data-index="5"] .bird').style.transform = `translate(${window.innerWidth}px, ${-window.innerHeight * 0.7}px)`;
-            
-            } else{
-                console.log(key);
-                document.querySelector('[data-index="5"] .bird').style.transform = `translateX(-100%)`;
-            }
-            
-        },
-        
-    };
-
     // console.log("??");
     const stepElems = document.querySelectorAll('.step');
     const graphicsElems = document.querySelectorAll('.graphic-item');
@@ -90,7 +63,7 @@
     let ioIndex_new;
 
     const io_new = new IntersectionObserver((entries_new, observer) => {
-        ioIndex_new = entries_new[0].target.dataset.index * 1;
+        ioIndex_new = entries_new[0].target.dataset.index * 1 - 1;
     });
 
     for(let i=0; i< stepElems_new.length;i++){
@@ -195,7 +168,7 @@
             //f1();
         }
 
-    
+
 
         // document.getElementById("parent").onclick = function fun() {
         //     //document.getElementById('clickableTarget').style.display='none';

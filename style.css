@@ -18,11 +18,6 @@ img {
 }
 
 
-.global-width{
-	/* max-width: 620px; */
-	margin:0 auto;
-	/* padding: 0 1rem; */
-}
 .scroll-graphic{
 	position:sticky;
 	top: 10%;
@@ -43,7 +38,7 @@ img {
 	justify-content: center;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: -10%;
 	width: 100%;
 	height: 100%;
 	opacity: 0;
@@ -73,7 +68,12 @@ img {
 
 
 #header-area {
-	padding-top: 30vh;
+	padding-top: 40vh;
+}
+
+.top-bottom-padding {
+	padding-top: 5vh;
+	padding-bottom: 1vh;
 }
 
 .step{
@@ -122,8 +122,9 @@ img {
 	bottom: 30%;
 }
 .global-footer{
-	padding: 2rem 0;
+	padding: 2rem 2rem;
 	text-align: center;
+	background-color: white;
 }
 .strikethrough{
 	text-decoration: line-through;
@@ -193,22 +194,11 @@ img {
 	touch-action:none;
 }
 
-#clickableTarget{
-	display: block;
-	width: 100vw;
-	height: 100vw;
-}
-
-
-code {
-	padding: 5px 0px;
-}
-  
 #parent {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	background: transparent;
-	width: 100vw;
+	width: 100%;
 	height: 100vw;
 
 	background-image: url("images/room.png");
@@ -320,14 +310,10 @@ code {
 	/* box-shadow: rgba(0,0,0,0.3) 0 0 3px; */
   }	
 
-  #check-game {
-	
-  }
-
   #check-list { 
 	position: absolute;
 	top : 9%;	
-	left: 2%;
+	left: 5%;
 
 	padding:0.5rem 1rem;
 	border-radius: 10px;
@@ -337,8 +323,8 @@ code {
 
   #check-tools {
 	position: absolute;
-	left: 2%;
-	bottom: 2%;
+	left: 5%;
+	bottom: 3%;
 	margin: auto auto;
 
 	padding:0.5rem 1rem;
@@ -406,8 +392,6 @@ code {
   stroke: none
 }
 
-
-
 .resp-sharing-button--facebook {
   background-color: #3b5998
 }
@@ -429,6 +413,7 @@ code {
 
 .center-align {
 	text-align: center;
+	margin: 20px auto;
 }
 
 .vertical-center {
@@ -436,24 +421,40 @@ code {
 }
 
 .new-para-padding {
-	padding-top: 10vh;
+	padding-top: 5vh;
 }
 
-.bg-buildings { 
-	/* The image used */
+.end-para-padding {
+	padding-bottom: 15vh;
+}
+
+.bg-buildings {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background: url(images/bg.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+
+  
+
+/* .bg-buildings { 
 	background-image: url("images/bg.png");
 	background-position: bottom;
   
-	/* Full height */
 	width: 100%;
-	/* height: 100%;  */
   
-	/* Center and scale the image nicely */
-	/* background-position: center; */
 	background-repeat: no-repeat;
 	background-size: cover; 
 	background-attachment: fixed;
-}
+} */
 
 .bg-white{
 	background-color: white;
@@ -490,11 +491,13 @@ code {
 
    /* challenge */
    .challenge-img {
-	   width: 80vw;
+	   width: 100vw;
+	   /* height: 100vw; */
    }
 
    #challenge-text {
 	   text-align: center;
+
 		margin-bottom: 20vh;
 	   /* font-size: large; */
    }
@@ -503,9 +506,14 @@ code {
 	font-weight: 700;
    }
 
+   .mySlides {
+		text-align: center;
+   }
+
 
   .need-padding {
-	  max-width: 90vw;
+	  max-width: 100%;
+	  padding:6%;
   }
 
   .text-justify {
@@ -516,3 +524,11 @@ code {
 	  text-align: right;
 	  font-size: x-small;
   }
+
+  .no-padding {
+	  padding: 0 !important;
+	  margin: 0 !important;
+  }
+
+
+
